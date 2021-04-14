@@ -1,0 +1,11 @@
+button{
+    display: block;
+    margin: 10px;
+    width: 250px;
+    height: 30px;
+    border: 2px solid red;
+    background: linear-gradient(45deg,red,black);
+    color: white;
+    outline: none;
+    border-radius: 20px;
+}

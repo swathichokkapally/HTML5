@@ -1,0 +1,35 @@
+Storages
+========
+
+1) local Storages
+
+2) session storage
+
+
+HTML5, supports following storages.
+
+1) local storage
+
+2) session storage
+
+
+local storage
+=============
+
+    when ever we close the browser, opens the new tab data won't be lost.
+
+
+session storage
+===============
+
+    when ever we close the browser, or opens the new tab, automatically we will lost the data.
+
+
+
+
+
+
+
+
+
+
