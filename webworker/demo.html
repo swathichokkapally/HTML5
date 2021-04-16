@@ -1,0 +1,19 @@
+<!--
+    check webworker support
+-->
+<!DOCTYPE html>
+<script>
+    if(window.Worker){
+        let myWorker = new Worker("demo.js");
+
+        myWorker.postMessage({"addition":{"num1":10,"num2":20}});
+
+        myWorker.onmessage = function(e){
+            console.log(e.data);
+        };
+
+
+    }else{
+        console.log("your browser won't support");
+    }
+</script>
