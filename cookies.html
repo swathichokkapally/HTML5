@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cookies</title>
+    </head>
+    <body>
+        <button onclick="setCookie()">Set Cookie</button>
+        <button onclick="getCookie()">Get Cookie</button>
+
+
+        <!-- <script>
+            function setCookie(){
+                //set the cookie
+                document.cookie="sub=reactjs";
+            };
+
+            function getCookie(){
+                console.log(document.cookie.split("=")[1]);
+            };
+        </script> -->
+
+
+        <script>
+             function setCookie(){
+                 document.cookie = "key1=Hello_1";
+                 document.cookie = "key2=Hello_2";
+                 var d = new Date();
+                 d.setTime(d.getTime()+30000);
+                 document.cookie = "key3=Hello_3; expires="+d.toUTCString();
+             }
+
+             function getCookie(){
+                 console.log(document.cookie);
+                //console.log( document.cookie.split("; ").find((element)=>{ return element.startsWith("key2=") }).split("=")[1] );
+
+                document.cookie = "key1=;"
+            };
+        </script>
+
+
+    </body>
+</html>

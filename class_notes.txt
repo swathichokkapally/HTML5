@@ -25,6 +25,44 @@ session storage
     when ever we close the browser, or opens the new tab, automatically we will lost the data.
 
 
+                                        webworker   (multi threading)
+                                        =========
+
+    - webworker is used to run the script at background.
+
+=> install live server
+
+
+=> create the two files
+
+*****************************************
+webworker
+        demo.html    (main thread)   (browser engine)
+
+        demo.js      (mythread)      (webworker api)
+*****************************************
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
