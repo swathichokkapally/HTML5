@@ -43,6 +43,62 @@ webworker
 *****************************************
 
 
+                                                    Server Sent Events
+
+    - when ever updates available in server, automatically webpage receives that updates with the help of server sent events API.
+
+steps to implement the server sent events
+-----------------------------------------
+
+    - in general, we will develop server by using NodeJS.
+
+
+step 1.
+    create the directory
+
+    Ex.
+        serversentevents
+
+
+step 2.
+    switch to serversentevents
+
+    > cd serversentevents
+
+step 3.
+    download express library
+
+    > yarn add express --save
+
+step 4.
+    implement the node server
+
+    Ex.
+        server.js
+
+step 5.
+    start the node server
+
+    > node server.js
+
+step 6.
+    test the following url by using browser.
+
+    http://localhost:8080/ashokit
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

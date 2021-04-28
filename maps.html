@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Geolocation API</title>
+    </head>
+    <body>
+        <p id="my_paragraph"></p> <br><br>
+        <button onclick="clickMe()">Click Me</button>
+        <script>
+            /*
+                function clickMe(){
+                if(navigator.geolocation){
+                    navigator.geolocation.getCurrentPosition( function fun_one(position){
+                        console.log( position );
+                        document.getElementById("my_paragraph").innerHTML = position.coords.latitude+"   "+position.coords.longitude;
+                    },
+                    function fun_two(error){
+                        console.log(error);
+                    },
+                    {timeout:60000} );
+                }
+                };
+            */
+
+            var loc;
+            var watchID;
+
+            function clickMe(){
+                if(navigator.geolocation){
+                    loc = navigator.geolocation; 
+                    watchID = loc.watchPosition(function fun_one(position){
+                        document.getElementById("my_paragraph").innerHTML = position.coords.latitude+"  "+position.coords.longitude+"   "+position.timestamp;
+                    },function fun_two(error){
+                        console.log(error);
+                    },{timeout:60000});
+                }
+            };
+
+
+        </script>
+    </body>
+</html>
+
+
+
+<!--
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Geolocation API</title>
+    </head>
+    <body>
+        <button onclick="test()">click me</button>
+        <script>
+            var watchID;
+            var var1;
+            // if(navigator.geolocation){
+            //     navigator.geolocation.getCurrentPosition(function successCallBack(position){
+            //         console.log(position);
+            //     },function errorCallBack(err){
+            //         console.log(err);
+            //     },{timeout:60000})
+            // }
+
+            function test(){
+                console.log("hello");
+                if(navigator.geolocation){
+                    var1=navigator.geolocation;
+                    watchID = var1.watchPosition(function fun_one(pos){},function fun_two(err){},{timeout:60000});
+                }
+            }
+
+            function fun_one(position){
+                console.log(position);
+            };
+
+            function fun_two(error){
+                console.log(error);
+            };
+
+            
+        </script>
+    </body>
+</html>
+-->
